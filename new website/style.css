@@ -824,7 +824,30 @@ h4 {
 .bg-presentation {
     background-image: url("img/image-de-presentation.bmp");
 }
-
+.rajout{
+    font-size: x-large;
+    color: #000000;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.part2{
+    font-style: italic;
+    margin-bottom: 0;
+}
+.part2+div{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.part3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.part3 span{
+    display: block;
+    width: 500px;
+    margin-right: 100px;
+}
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
@@ -1039,4 +1062,7 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+*:focus{
+    border: 3px #cf490b  solid;
 }

@@ -651,7 +651,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: black!important;
 }
 
 .container {
@@ -736,7 +736,7 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: black!important;
 }
 
 .portfolio-thumb {
@@ -775,12 +775,12 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: white!important;
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: black!important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -1075,5 +1075,31 @@ top: 30px;
 }
 /*recommandation SEO*/
 *:focus{
-    border: 3px #cf490b solid;
+    border: 1px black solid;
+    text-decoration: 0px !important;
+}
+.text-center{
+    opacity: 1!important;
+}
+.btn-atomic-tangerine:focus {
+    background: #c27956!important;
+    color: #FFFFFF!important;
+}
+a[data-lightbox]:focus img {
+    opacity: 0.6;
+}
+.l-bloc a:focus .icon-md{
+    color: black;
+}
+li a{
+    font-size: 25px;
+}
+.lien-1{
+    width: 300px;
+}
+.lien-2{
+    width: 380px;
+}
+.lien-3{
+    width: 340px;
 }

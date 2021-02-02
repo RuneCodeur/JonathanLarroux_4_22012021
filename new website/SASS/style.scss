@@ -822,7 +822,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 @media (max-width: 1024px) {
     .bloc {
@@ -1102,4 +1102,7 @@ li a{
 }
 .lien-3{
     width: 340px;
+}
+.bloc .bgc-white .l-bloc{
+    border: 3px red solid;
 }

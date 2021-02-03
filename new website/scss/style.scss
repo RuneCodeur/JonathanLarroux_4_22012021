@@ -1,0 +1,14 @@
+@import "_utils/_variables";
+@import "_utils/_fonctions";
+@import "_base/_fondation";
+@import "_components/_keyframes";
+@import "_layout/_header";
+@import "_pages/_index";
+@import "_layout/_footer";
+*{
+    border: 1px red solid;
+}
+.testouillage{
+    border: 3px green solid;
+    margin: 10px;
+}

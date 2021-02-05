@@ -6,60 +6,72 @@
 		<meta name="description" content="">
 		<link rel="shortcut icon" type="image/png" href="img/favicon.svg">
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta name="viewport" content="width=450, initial-scale=1">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 	</head>
+
 	<body>
 		<header>
-			<div>
-				<a href="index.html"> <img src="img/la-chouette-agence.svg" alt="La chouette Agence" height="50px"></a>
-				<nav>
-					<button type="button"> <i class="fas fa-bars"></i></button>
-					<ul>
-						<li><a href="index.html"> Accueil</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>	
+			<div class="global-header">
+				<div>
+					<a href="index.html" class="logo"> <img src="img/la-chouette-agence.svg" alt="La chouette Agence" height="40"></a>
+				</div>
+				<nav class="list">
+					<label>
+						<i class="fas fa-bars"></i> 
+						<input type="checkbox">
+							<span class="volet">
+								<span class="index"><a href="index.html"> Accueil</a></span>
+								<span class="contact"><a href="contact.html">Contact</a></span>
+							</span>
+					</label>
 				</nav>
 			</div>
 		</header>
 
-		<div>
-			<h1>Parlons web design !</h1>
-			<p>Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
-			Parlez-nous de votre projet en complétant le formulaire ci-dessous.</p>
-		</div>
-		<form action="form_1.php" method="POST">
-			<div>
-				<div>
-					<label for="name">
-						Nom
-					</label>
-					<input type="text" id="name" required>
-				</div>
-				<div>
-					<label for="email">
-						Adresse email
-					</label>
-					<input type="email" id="email" required>
-				</div>
-				<div>
-					<label for="connaissance">
-						Comment nous avez-vous connu ?
-					</label>
-					<input type="text" id="connaissance" required>
-				</div>
-				<div>
-					<label for="message">
-						Brief de votre projet (Ajoutez autant de détails que nécessaire)
-					</label>
-					<textarea id="message" rows="4" cols="50" required></textarea>
-				</div>
+		<div class="banniere decontact">
+			<div class="texture">
+				<h1>Parlons web design !</h1>
+				<p>Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
+				Parlez-nous de votre projet en complétant le formulaire ci-dessous.</p>
 			</div>
+		</div>
 
-			<button type="submit">
-				Envoyer
-			</button>
-		</form>
-		<div>
+		<div class="formulaire ">
+			<form action="form_1.php" method="POST">
+				<div>
+					<div>
+						<label for="name">
+							Nom
+						</label>
+						<input type="text" id="name" placeholder="Laurent Martin" required>
+					</div>
+					<div>
+						<label for="email">
+							Adresse email
+						</label>
+						<input type="email" id="email" placeholder="monemail@exemple.com" required>
+					</div>
+					<div>
+						<label for="connaissance">
+							Comment nous avez-vous connu ?
+						</label>
+						<input type="text" id="connaissance" placeholder="ex: publicité, etc... " required>
+					</div>
+					<div class="message">
+						<label for="message">
+							Brief de votre projet (Ajoutez autant de détails que nécessaire)
+						</label>
+						<textarea id="message" rows="4" cols="50" required></textarea>
+					</div>
+				</div>
+				<button type="submit">
+					ENVOYER
+				</button>
+			</form>
+		</div>
+
+		<div class="notre-adresse">
 			<p>
 				contact@lachouetteagence.com<br>
 				2 place Sathonay 69001 Lyon<br>
@@ -68,16 +80,16 @@
 		</div>
 
 		<footer>
-			<div> <p>La chouette agence - Agence web basée à Lyon.</p>
-				<div>
-					<div><a href="index.html"><i class="fab fa-twitter"></i> twitter</a></div>
-					<div><a href="index.html"><i class="fab fa-facebook-f"></i> facebook</a></div>
-					<div><a href="index.html"><i class="fab fa-dribbble"></i> dribbble</a></div>
-					<div><a href="index.html"><i class="fab fa-instagram"></i> instagram</a></div>
+			<div class="ensemble-social"> <p>La chouette agence - Agence web basée à Lyon.</p>
+				<div class="bloc-social">
+					<a href="index.html" class="social"><i class="fab fa-twitter"></i>twitter</a>
+					<a href="index.html" class="social"><i class="fab fa-facebook-f"></i>facebook</a>
+					<a href="index.html" class="social"><i class="fab fa-dribbble"></i>dribbble</a>
+					<a href="index.html" class="social"><i class="fab fa-instagram"></i>instagram</a>
 				</div>
 			</div>
-			<div>
-				<div>
+			<div class="ensemble-annuaire">
+				<div class="annuaire">
 					<h2>Partenaires</h2>
 					<ul>
 						<li><a href="voiture.com">voiture.com</a></li>
@@ -86,7 +98,7 @@
 						<li><a href="immobilierseo.com">immobilierseo.com</a></li>
 					</ul>
 				</div>
-				<div>
+				<div class="annuaire">
 					<h2>Annuaires liste 1</h2>
 					<ul>
 						<li><a href="annuaireagence.com">annuaireagence.com</a></li>
@@ -100,7 +112,7 @@
 						<li><a href="listeseo.com">listeseo.com</a></li>
 					</ul>
 				</div>
-				<div>
+				<div class="annuaire">
 					<h2>Annuaires liste 2</h2>
 					<ul>
 						<li><a href="betterseo.com">betterseo.com</a></li>

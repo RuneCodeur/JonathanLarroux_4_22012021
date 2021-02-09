@@ -13,18 +13,15 @@
                width: auto;
             }
          }
-         .header-button{
+         .bouton-navigation{
              position: absolute;
              right: 5px;
              top: 25px;
              padding: 10px 15px;
              border: none;
-             p{
-                 display: none;
-             }
         }
         .fa-bars{
-            color: rgb(127,127,127);
+            color: darken($colorbackground, 50%);
             border: none;
             font-size: 25px;
             transform:scaleX(1.5);
@@ -43,8 +40,8 @@
             animation-fill-mode: both;
             position: relative;
             .index, .contact{
-                border-top: 1px rgb(204,204,204) solid;
-                border-bottom: 1px rgb(204,204,204) solid;
+                border-top: 1px darken($colorbackground, 20%) solid;
+                border-bottom: 1px darken($colorbackground, 20%) solid;
                 min-height: 40px;
                 padding: 0;
                 width: 100%;
@@ -73,6 +70,9 @@
             justify-content: space-between;
             display: flex;
             width: 1000px;
+            .bouton-navigation{
+                display: none;
+            }
             .fa-bars{
                 display: none;
             }

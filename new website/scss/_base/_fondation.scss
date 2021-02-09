@@ -6,11 +6,10 @@ html, body{
 header li{
     list-style-type: none;
 }
-
 *{
     font-family: Arial;
     text-decoration: none;
-    color: black;
+    color: $colorfont;
 }
 h1{
     display: block;

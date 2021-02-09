@@ -1,9 +1,9 @@
 .banniere{
     margin-top: 20px;
     background-image: url(img/la-chouette-agence-banniere.jpg);
-    background-color:#636363;
+    background-color: darken($colorbackground, 42%);
     width: 100%;
-    height: 430px;
+    height: 450px;
     background-size: cover;
     background-position: center;
     .texture{
@@ -15,16 +15,16 @@
         justify-content: center;
         align-items: center;
         h1{
-            color: white;
+            color: $colorbackground;
         }
         h2, p{
             text-align: center;
-            color: white;
+            color: $colorbackground;
             font-weight: normal;
             margin: 40px 20px;
         }
         a{
-            background-color: rgb(243, 151, 108);
+            background-color: $colorprimary;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -32,7 +32,7 @@
             width: 130px;
             height: 50px;
             font-size: 15px;
-            color: black;
+            color: $colorfont;
             border-radius: 50px;
             font-weight: bold;
         }
@@ -66,8 +66,8 @@
             span{
                 height: 50px;
                 font-size: 55px;
-                color: rgb(54, 69, 119);
-                text-shadow: rgb(202, 202, 202) 0 1px 1px;
+                color: $colorsecondary;
+                text-shadow: darken($colorbackground , 30%) 0 1px 1px;
             }
             H3{
                 text-transform: uppercase;
@@ -75,7 +75,7 @@
                 margin-top: 25px;
             }
             p{
-                font-size: 11px;
+                font-size: 12px;
                 text-align: center;
                 max-width: 230px;
             }
@@ -113,7 +113,7 @@
     justify-content: center;
         .cadre{
         width: 585px;
-        background-color: rgba(170, 134, 56, 0.6);
+        background-color: $colortertiary;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -139,12 +139,12 @@
             text-align: center;
             font-weight: normal;
             margin: 0 50px;
-            font-size: 11px;
-            color: white;
+            font-size: 12px;
+            color: $colorbackground;
             line-height: 15px;
         }
         a{
-            color: white;
+            color: $colorbackground;
             margin-top: 5px;
             margin-bottom: 50px;
             font-weight: bold;
@@ -164,6 +164,7 @@
     h2{
         text-align: center;
         font-weight: normal;
+        margin: 0 30px;
     }
     .ensemble-folio{
         display: flex;
@@ -183,7 +184,7 @@
                     position: absolute;
                     width: 275px;
                     height: 275px;
-                    background-color: rgba(255, 255, 255, 0.4);
+                    background-color: $colorfolio;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -199,8 +200,8 @@
                         text-align: center;
                         line-height: 50px;
                         font-weight: bold;
-                        background-color: rgba(0, 0, 0, 0.6);
-                        color: white;
+                        background-color: $colormorefolio;
+                        color: $colorbackground;
                     }
                 }
             }
@@ -210,7 +211,7 @@
             }
             p{
                 margin-top: 0;
-                font-size: 11px;
+                font-size: 12px;
                 text-align: center;
             }
         }
@@ -218,6 +219,9 @@
 }
 
 @media screen and (max-width: 775px){
+    .banniere{
+        height: 320px;
+    }
     .service{
         .objectifs{
             flex-direction: column;

@@ -1,6 +1,7 @@
 .banniere{
     margin-top: 20px;
     background-image: url(img/la-chouette-agence-banniere.jpg);
+    background-color:#636363;
     width: 100%;
     height: 430px;
     background-size: cover;
@@ -9,13 +10,12 @@
         background-image: url(img/texture-paper.png);
         height: 100%;
         background-size: contain;
-        position: absolue;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         h1{
-            color: rgb(243, 151, 108);
+            color: white;
         }
         h2, p{
             text-align: center;
@@ -32,7 +32,7 @@
             width: 130px;
             height: 50px;
             font-size: 15px;
-            color: white;
+            color: black;
             border-radius: 50px;
             font-weight: bold;
         }
@@ -105,7 +105,6 @@
 .presentation{
     margin-top: 20px;
     background-image: url(img/image-de-presentation.jpg);
-    width: 100%;
     height: 500px;
     background-size: cover;
     background-position: center;

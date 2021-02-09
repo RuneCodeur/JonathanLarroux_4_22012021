@@ -11,7 +11,7 @@ footer{
         p{
             margin: 0;
             padding: 20px;
-            color: white;
+            color: black;
             text-align: center;
             }
             .bloc-social{
@@ -27,12 +27,13 @@ footer{
                     align-items: center;
                     padding: 15px;
                     margin: 10px 20px;
-                    color: white;
+                    color: black;
                     font-size: 25px;
                     height: 60px;
                     width: 90px;
+                    font-weight: bold;
                     i{
-                        color: white;
+                        color: black;
                     }
                 }
             }
@@ -46,9 +47,9 @@ footer{
         .annuaire{
             margin: 20px;
             h2{
-                color: white;
+                color: black;
+                font-weight: bold;
                 font-size: 15px;
-                font-weight: normal;
             }
             ul{
                 display: flex;

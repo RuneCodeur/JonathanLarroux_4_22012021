@@ -1,6 +1,6 @@
  header{
     padding: 0;
-    .global-header{
+    .ensemble-header{
         display: block;
         div{
             display: flex;
@@ -14,15 +14,14 @@
             }
          }
          .bouton-navigation{
-             position: absolute;
-             right: 5px;
-             top: 25px;
-             padding: 10px 15px;
-             border: none;
+             display: none;
         }
         .fa-bars{
             color: darken($colorbackground, 50%);
-            border: none;
+            right: 5px;
+            top: 25px;
+            padding: 10px 15px; 
+            position: absolute;
             font-size: 25px;
             transform:scaleX(1.5);
             transform: scaleY(0.7);
@@ -66,7 +65,7 @@
     header{
         justify-content: center;
         display: flex;
-        .global-header{
+        .ensemble-header{
             justify-content: space-between;
             display: flex;
             width: 1000px;

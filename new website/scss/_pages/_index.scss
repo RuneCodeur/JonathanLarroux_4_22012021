@@ -51,13 +51,13 @@
         text-align: center;
         margin: 0 50px;
     }
-    .objectifs{
+    .objectif{
         margin-top: 20px;
         display: flex;
         justify-content: space-around;
         align-items: center;
         max-width: 1000px;
-        .bloc{
+        .bloc-objectif{
             display: flex;
             margin: 20px;
             justify-content: center;
@@ -223,7 +223,7 @@
         height: 320px;
     }
     .service{
-        .objectifs{
+        .objectif{
             flex-direction: column;
         }
         .citation{
